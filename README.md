@@ -1,5 +1,5 @@
 ### Hi there 👋
-I am Beshambher Chaukhwan, a full stack developer from India.
+I am Beshambher Chaukhwan, a full stack developer from India who is curious about the virtual world of computers. I'm interested in softwares as for me they are the souls which brings machines to life. I'm experienced in developing enterprise level applications from the scratch. I'm focused and flexible to switch backend and frontend development back and forth on the fly and tweaking the system if required. I'm constantly honing my analytical and collaboration skills, and I love working with a team.
 
 
 ### 🔭 Expertise
