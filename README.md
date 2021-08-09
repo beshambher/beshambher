@@ -1,8 +1,25 @@
-- 👋 Hi, I’m @beshambher
-- 👀 I’m interested in Java and JavaScript
-- 🌱 I’m currently learning AWS and DevOps
-- 💞️ I’m looking to for new adventures
-- 📫 How to reach me bishamberc@gmail.com or <a href="https://www.linkedin.com/in/beshambher-chaukhwan/">LinkedIn</a>
+### Hi there 👋
+I am Beshambher Chaukhwan, a full stack developer from India.
+
+
+### 🔭 Expertise
+
+- Backend: Java, PHP
+- Frontend: JavaScript, Angular, Vue.js, HTML, CSS
+- Frameworks: Spring Boot, Laravel, Symfony
+- Cloud: AWS
+    
+
+### 🌱 I’m currently learning 
+
+- DevOps
+    
+### 📫 How to reach me: 
+
+- Email: bishamberc@gmail.com
+- LinkedIn: https://www.linkedin.com/in/beshambher-chaukhwan/
+- StackOverflow: https://stackoverflow.com/users/6220223/beshambher-chaukhwan 
+- LeetCode: https://leetcode.com/bishamberc/
 
 <!---
 beshambher/beshambher is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
