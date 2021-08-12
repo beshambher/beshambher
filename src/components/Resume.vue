@@ -96,7 +96,7 @@
                   <div :key="e.duration" class="timeline-card timeline-card-success card shadow-sm">
                     <div class="card-body">
                       <div class="h5 mb-1">{{e.school}} </div>
-                      <div><span class="text-muted h6">{{e.title}}</span></div>
+                      <div class="text-muted h6 mb-1">{{e.title}}</div>
                       <div class="text-muted text-small mb-1">{{e.duration}}</div>
                       <div class="text-muted text-small mb-0">{{e.description}}</div>
                     </div>
