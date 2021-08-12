@@ -7,7 +7,7 @@
             <nav role="navigation">
               <ul class="nav justify-content-center">
                 <li class="nav-item" v-for="s in social" :key="s.title">
-                  <a class="nav-link" :href="s.url" :title="s.title">
+                  <a class="nav-link" target="_blank" :href="s.url" :title="s.title">
                     <i class="fab" :class="s.icon"></i><span class="menu-title sr-only">{{s.title}}</span>
                   </a>
                 </li>

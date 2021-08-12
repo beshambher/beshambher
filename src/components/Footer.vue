@@ -7,7 +7,7 @@
             <nav role="navigation">
               <ul class="nav justify-content-center">
                 <li class="nav-item" v-for="s in social" :key="s.title">
-                  <a class="nav-link" :href="s.url" :title="s.title">
+                  <a class="nav-link" target="_blank" :href="s.url" :title="s.title">
                     <i class="fab" :class="s.icon"></i><span class="menu-title sr-only">{{s.title}}</span>
                   </a>
                 </li>
@@ -23,13 +23,13 @@
         <div class="footer-nav d-inline">
           <nav role="navigation">
             <ul class="nav justify-content-center">
-              <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
+              <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" target="_blank" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
+              <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" target="_blank" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
+              <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" target="_blank" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="https://github.com/templateflip" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+              <li class="nav-item"><a class="nav-link" href="https://github.com/templateflip" target="_blank" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
               </li>
             </ul>
           </nav>
