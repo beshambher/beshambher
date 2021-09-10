@@ -20,6 +20,7 @@ I am Beshambher Chaukhwan, a full stack developer from India who is curious abou
 - LinkedIn: https://www.linkedin.com/in/beshambher-chaukhwan/
 - StackOverflow: https://stackoverflow.com/users/6220223/beshambher-chaukhwan 
 - LeetCode: https://leetcode.com/bishamberc/
+- Resume/CV: https://beshambher.github.io/beshambher/
 
 <!---
 beshambher/beshambher is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
