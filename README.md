@@ -8,6 +8,7 @@ I am Beshambher Chaukhwan, a full stack developer from India who is curious abou
 - Frontend: JavaScript, Angular, Vue.js, HTML, CSS
 - Frameworks: Spring Boot, Laravel, Symfony
 - Cloud: AWS
+- CI/CD: GitHub, Jenkins, Docker
     
 
 ### 🌱 I’m currently learning 
@@ -20,7 +21,14 @@ I am Beshambher Chaukhwan, a full stack developer from India who is curious abou
 - LinkedIn: https://www.linkedin.com/in/beshambher-chaukhwan/
 - StackOverflow: https://stackoverflow.com/users/6220223/beshambher-chaukhwan 
 - LeetCode: https://leetcode.com/bishamberc/
+
+### 📝 My Resume:
+
 - Resume/CV: https://beshambher.github.io/beshambher/
+
+### 💻 Personal projects:
+
+- Social Media: https://social-media-beshambher.herokuapp.com/
 
 <!---
 beshambher/beshambher is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
