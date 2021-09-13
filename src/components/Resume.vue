@@ -153,10 +153,31 @@
               </button>
             </div>
             <div class="modal-body">
-              <p class="m-0 text-center text-muted h6">Coming Soon!</p>
+              <div class="row g-3">
+                <template v-for="project in projects">
+                  <div class="col" :key="project.title">
+                    <a :href="project.url" target="_blank" class="text-dark text-decoration-none">
+                      <div class="card shadow-sm">
+                        <img :src="project.image" :alt="project.title" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+                        <div class="card-body py-2">
+                          <h2 class="display-6 lh-1 fw-bold">{{project.title}}</h2>
+                          <p class="card-text">{{project.description}}</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">
+                              <i class="fas fa-globe me-1"></i>
+                              <a :href="project.url" target="_blank" class="text-link text-decoration-link">{{project.title}}</a>
+                            </small>
+                            <small class="text-muted"><i class="fas fa-user me-1"></i>{{project.author}}</small>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </template>
+              </div>
             </div>
             <div class="modal-footer p-1">
-              <button type="button" class="btn btn-sm btn-danger mx-auto" data-dismiss="modal" @click="showModal=false">OK I'll wait</button>
+              <button type="button" class="btn btn-sm btn-danger mx-auto" data-dismiss="modal" @click="showModal=false">Ok</button>
             </div>
           </div>
         </div>
@@ -231,6 +252,15 @@ export default {
         company: 'WebMoneyCafe (StartUp)',
         duration: 'Dec 2015 - Feb 2016',
         description: 'Worked as an intern and participated in the development of several web development projects in Laravel and Symfony (PHP).'
+      }],
+      projects: [{
+        title: 'Social Media',
+        description: 'A place to connect with the people.',
+        logo: 'https://social-media-beshambher.herokuapp.com/assets/images/logo.png',
+        image: 'https://social-media-beshambher.herokuapp.com/assets/images/social-media-1.jpg',
+        url: 'https://social-media-beshambher.herokuapp.com/',
+        location: 'India',
+        author: 'Beshambher'
       }]
     }
   }
