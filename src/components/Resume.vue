@@ -26,7 +26,7 @@
                 <div class="col-md-6">
                   <h2 class="h3 mb-3">About Me</h2>
                   <p>Hello! I’m Beshambher Chaukhwan. I am passionate about software development.
-                  I am a skilled Backend and Frontend Developer having experience of developing enterprise level applications.</p>
+                  I am a skilled Backend and Frontend developer having experience of developing enterprise level applications using Agile methodologies.</p>
                 </div>
                 <div class="col-md-5 offset-md-1">
                   <div class="row mt-2">
@@ -69,6 +69,20 @@
                       </div>
                     </div>
                   </template>
+                </div>
+                <div class="col-md-12">
+                  <div class="row">
+                    <template v-for="(skill, i) in skills.others">
+                      <div class="col-md-6 mb-2" :key="skill.key">
+                        <span>{{skill.key}}</span>
+                        <div class="progress my-1">
+                          <div class="progress-bar bg-danger" role="progressbar" :style="{width: skill.value+'%'}" 
+                            data-aos="zoom-in-right" :data-aos-delay="(i+1)*100" data-aos-anchor=".skills-section"
+                            :aria-valuenow="skill.value" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </template>
+                  </div>
                 </div>
               </div>
             </div>
@@ -216,10 +230,10 @@ export default {
       skills: {
         backend: [
           { key: 'Java', value: '100'},
-          { key: 'PHP', value: '80'},
-          { key: 'C++', value: '70'},
           { key: 'MySQL', value: '90'},
-          { key: 'AWS', value: '50'}
+          { key: 'Spring Boot', value: '70'},
+          { key: 'PHP', value: '70'},
+          { key: 'C++', value: '70'}
         ],
         frontend: [
           { key: 'HTML', value: '100'},
@@ -227,6 +241,10 @@ export default {
           { key: 'JavaScript', value: '90'},
           { key: 'Angular', value: '90'},
           { key: 'Vue.js', value: '70'}
+        ],
+        others: [
+          { key: 'Amazon Web Services (AWS)', value: '70'},
+          { key: 'Agile Methodology (Jira/Kanban)', value: '100'}
         ]
       },
       education: [{
