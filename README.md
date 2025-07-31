@@ -28,7 +28,7 @@ I am Beshambher Chaukhwan, a full stack developer from India who is curious abou
 
 ### 💻 Personal projects:
 
-- Social Media: https://social-media-beshambher.herokuapp.com/
+- Social Media: <strike>https://social-media-beshambher.herokuapp.com/ </strike>
 
 <!---
 beshambher/beshambher is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

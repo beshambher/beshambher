@@ -25,16 +25,16 @@
               <div class="row">
                 <div class="col-md-6">
                   <h2 class="h3 mb-3">About Me</h2>
-                  <p>Hello! I’m Beshambher Chaukhwan. I am passionate about software development.
+                  <p>I am passionate about software development.
                   I am a skilled Backend and Frontend developer having experience of developing enterprise level applications using Agile methodologies.</p>
                 </div>
                 <div class="col-md-5 offset-md-1">
                   <div class="row mt-2">
-                    <template v-for="(value, key) of personal">
-                      <div class="col-sm-4" :key="key">
+                    <template v-for="(value, key) of personal" :key="key">
+                      <div class="col-sm-4">
                         <div class="pb-1">{{key}}</div>
                       </div>
-                      <div class="col-sm-8" :key="key+'='">
+                      <div class="col-sm-8">
                         <div class="pb-1 text-secondary">{{value}}</div>
                       </div>
                     </template>
@@ -46,37 +46,33 @@
             <div class="skills-section px-3 px-lg-4">
               <h2 class="h3 mb-3">Professional Skills</h2>
               <div class="row">
-                <div class="col-md-6">
-                  <template v-for="(skill, i) in skills.frontend">
-                    <div class="mb-2" :key="skill.key">
-                      <span>{{skill.key}}</span>
-                      <div class="progress my-1">
-                        <div class="progress-bar bg-primary" role="progressbar" :style="{width: skill.value+'%'}" 
-                          data-aos="zoom-in-right" :data-aos-delay="(i+1)*100" data-aos-anchor=".skills-section"
-                          :aria-valuenow="skill.value" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                  </template>
-                </div>
-                <div class="col-md-6">
-                  <template v-for="(skill, i) in skills.backend">
-                    <div class="mb-2" :key="skill.key">
-                      <span>{{skill.key}}</span>
-                      <div class="progress my-1">
-                        <div class="progress-bar bg-success" role="progressbar" :style="{width: skill.value+'%'}" 
-                          data-aos="zoom-in-right" :data-aos-delay="(i+1)*100" data-aos-anchor=".skills-section"
-                          :aria-valuenow="skill.value" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                  </template>
-                </div>
                 <div class="col-md-12">
                   <div class="row">
-                    <template v-for="(skill, i) in skills.others">
-                      <div class="col-md-6 mb-2" :key="skill.key">
+                    <template v-for="(skill, i) in skills.backend" :key="skill.key">
+                      <div class="col-md-6 mb-2">
                         <span>{{skill.key}}</span>
                         <div class="progress my-1">
-                          <div class="progress-bar bg-danger" role="progressbar" :style="{width: skill.value+'%'}" 
+                          <div class="progress-bar bg-primary" role="progressbar" :style="{width: skill.value+'%'}"
+                            data-aos="zoom-in-right" :data-aos-delay="(i+1)*100" data-aos-anchor=".skills-section"
+                            :aria-valuenow="skill.value" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </template>
+                    <template v-for="(skill, i) in skills.frontend" :key="skill.key">
+                      <div class="col-md-6 mb-2">
+                        <span>{{skill.key}}</span>
+                        <div class="progress my-1">
+                          <div class="progress-bar bg-success" role="progressbar" :style="{width: skill.value+'%'}"
+                            data-aos="zoom-in-right" :data-aos-delay="(i+1)*100" data-aos-anchor=".skills-section"
+                            :aria-valuenow="skill.value" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </template>
+                    <template v-for="(skill, i) in skills.others" :key="skill.key">
+                      <div class="col-md-6 mb-2">
+                        <span>{{skill.key}}</span>
+                        <div class="progress my-1">
+                          <div class="progress-bar bg-danger" role="progressbar" :style="{width: skill.value+'%'}"
                             data-aos="zoom-in-right" :data-aos-delay="(i+1)*100" data-aos-anchor=".skills-section"
                             :aria-valuenow="skill.value" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -90,8 +86,8 @@
             <div class="work-experience-section px-3 px-lg-4">
               <h2 class="h3 mb-4">Work Experience</h2>
               <div class="timeline">
-                <template v-for="w in workExperience">
-                  <div :key="w.duration" class="timeline-card timeline-card-primary card shadow-sm">
+                <template v-for="w in workExperience" :key="w.duration">
+                  <div class="timeline-card timeline-card-primary card shadow-sm">
                     <div class="card-body">
                       <div class="h5 mb-1">{{w.title}} <span class="text-muted h6">at {{w.company}}</span></div>
                       <div class="text-muted text-small mb-2">{{w.duration}}</div>
@@ -106,8 +102,8 @@
             <div class="education-section px-3 px-lg-4">
               <h2 class="h3 mb-4">Education</h2>
               <div class="timeline">
-                <template v-for="e in education">
-                  <div :key="e.duration" class="timeline-card timeline-card-success card shadow-sm">
+                <template v-for="e in education" :key="e.duration">
+                  <div class="timeline-card timeline-card-success card shadow-sm">
                     <div class="card-body">
                       <div class="h5 mb-1">{{e.school}} </div>
                       <div class="text-muted h6 mb-1">{{e.title}}</div>
@@ -144,8 +140,10 @@
                   <div class="mt-2">
                     <h3 class="h6">Address</h3>
                     <div class="pb-2 text-secondary">{{personal.Address}}</div>
+                    <!--
                     <h3 class="h6">Phone</h3>
                     <div class="pb-2 text-secondary">{{personal.Phone}}</div>
+                     -->
                     <h3 class="h6">Email</h3>
                     <div class="pb-2 text-secondary">{{personal.Email}}</div>
                   </div>
@@ -168,8 +166,8 @@
             </div>
             <div class="modal-body">
               <div class="row g-3">
-                <template v-for="project in projects">
-                  <div class="col" :key="project.title">
+                <template v-for="project in projects" :key="project.title">
+                  <div class="col">
                     <a :href="project.url" target="_blank" class="text-dark text-decoration-none">
                       <div class="card shadow-sm">
                         <img :src="project.image" :alt="project.title" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
@@ -177,10 +175,10 @@
                           <h2 class="display-6 lh-1 fw-bold">{{project.title}}</h2>
                           <p class="card-text">{{project.description}}</p>
                           <div class="d-flex justify-content-between align-items-center">
-                            <small class="text-muted">
+                            <small class="text-muted"><strike>
                               <i class="fas fa-globe me-1"></i>
                               <a :href="project.url" target="_blank" class="text-link text-decoration-link">{{project.title}}</a>
-                            </small>
+                            </strike></small>
                             <small class="text-muted"><i class="fas fa-user me-1"></i>{{project.author}}</small>
                           </div>
                         </div>
@@ -202,6 +200,7 @@
 <script>
 import Header from './Header.vue'
 import Footer from './Footer.vue'
+import resumeLink from '@/assets/docs/BeshambherChaukhwan.pdf';
 
 export default {
   name: 'Resume',
@@ -215,36 +214,43 @@ export default {
       personal: {
         Name: 'Beshambher Chaukhwan',
         DOB: '30 Jan 1995',
-        Email: 'bishamberc@gmail.com',
-        Phone: '+91-8285802949',
-        Address: 'Delhi, India'
+        Email: 'bchaukh@gmail.com',
+        // Phone: '+49-',
+        Address: 'Berlin, Germany'
       },
       social: [
         { title: 'GitHub', url: 'https://github.com/beshambher', icon: 'fa-github' },
         { title: 'LinkedIn', url: 'https://www.linkedin.com/in/beshambher-chaukhwan', icon: 'fa-linkedin' },
-        { title: 'WhatsApp', url: 'https://wa.link/3wic2k', icon: 'fa-whatsapp' },
         { title: 'StackOverFlow', url: 'https://stackoverflow.com/users/6220223/beshambher-chaukhwan', icon: 'fa-stack-overflow' },
         { title: 'LeetCode', url: 'https://leetcode.com/bishamberc/', icon: 'fa fa-file-code' }
       ],
-      resumeLink: require('@/assets/docs/BeshambherChaukhwan.pdf'),
+      resumeLink: resumeLink,
       skills: {
         backend: [
           { key: 'Java', value: '100'},
+          { key: 'Kotlin', value: '70'},
           { key: 'MySQL', value: '90'},
-          { key: 'Spring Boot', value: '70'},
+          { key: 'PostgreSQL', value: '90'},
+          { key: 'Spring Boot', value: '85'},
+          { key: 'Python', value: '50'},
+          { key: 'Django', value: '50'},
           { key: 'PHP', value: '70'},
           { key: 'C++', value: '70'}
         ],
         frontend: [
           { key: 'HTML', value: '100'},
-          { key: 'CSS', value: '90'},
+          { key: 'CSS', value: '95'},
           { key: 'JavaScript', value: '90'},
           { key: 'Angular', value: '90'},
-          { key: 'Vue.js', value: '70'}
+          { key: 'Vue.js', value: '70'},
         ],
         others: [
           { key: 'Amazon Web Services (AWS)', value: '70'},
-          { key: 'Agile Methodology (Jira/Kanban)', value: '100'}
+          { key: 'Kafka/Nakadi', value: '85'},
+          { key: 'Docker', value: '90'},
+          { key: 'Kubernetes', value: '60'},
+          { key: 'Git', value: '100'},
+          { key: 'Agile Methodology (Jira/Sprint/Kanban)', value: '100'}
         ]
       },
       education: [{
@@ -254,9 +260,23 @@ export default {
         description: 'Grade: 7.7/10'
       }],
       workExperience: [{
+         title: 'Senior Software Engineer',
+         company: 'Zalando, Germany',
+         duration: 'Jul 2024 - Present',
+         description: 'As a Senior Backend Developer on the B2B Returns team, I developed and designed ' +
+         'microservices using Java/Kotlin (Spring Boot), Python, PostgreSQL, Kafka (Nakadi), Kubernetes, and AWS ' +
+         'to facilitate partner returns and reports. I also created architectural designs and automated support tasks with scripts.'
+       }, {
+         title: 'Software Engineer',
+         company: 'Zalando, Germany',
+         duration: 'Mar 2022 - Jul 2024',
+         description: 'As a backend developer and a core member of the development team, ' +
+         'I worked on shipping and returns solutions for partners, focusing on efficient logistics and invoicing within the EU region (B2B). ' +
+         'This included design and development of several microservices using Java (Spring Boot), PostgreSQL, Kafka (Nakadi), Kubernetes, and AWS.'
+       }, {
         title: 'Lead Software Engineer',
         company: 'Samsung, India',
-        duration: 'Mar 2021 - Present',
+        duration: 'Mar 2021 - Feb 2022',
         description: 'A member of the server development team as a full stack developer. ' +
         'Designed and development a micro-service for browser notifications using pub-sub mechanism in Spring Boot.'
       }, {
@@ -277,7 +297,7 @@ export default {
         logo: 'https://social-media-beshambher.herokuapp.com/assets/images/logo.png',
         image: 'https://social-media-beshambher.herokuapp.com/assets/images/social-media-1.jpg',
         url: 'https://social-media-beshambher.herokuapp.com/',
-        location: 'India',
+        location: 'Germany',
         author: 'Beshambher'
       }]
     }
