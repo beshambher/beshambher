@@ -294,9 +294,9 @@ export default {
       projects: [{
         title: 'Social Media',
         description: 'A place to connect with the people.',
-        logo: 'https://social-media-beshambher.herokuapp.com/assets/images/logo.png',
-        image: 'https://social-media-beshambher.herokuapp.com/assets/images/social-media-1.jpg',
-        url: 'https://social-media-beshambher.herokuapp.com/',
+        logo: 'https://social-media-ibue.onrender.com/assets/images/logo.png',
+        image: 'https://social-media-ibue.onrender.com/assets/images/social-media-1.jpg',
+        url: 'https://social-media-ibue.onrender.com/',
         location: 'Germany',
         author: 'Beshambher'
       }]
