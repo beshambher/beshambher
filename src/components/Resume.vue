@@ -175,10 +175,10 @@
                           <h2 class="display-6 lh-1 fw-bold">{{project.title}}</h2>
                           <p class="card-text">{{project.description}}</p>
                           <div class="d-flex justify-content-between align-items-center">
-                            <small class="text-muted"><strike>
+                            <small class="text-muted">
                               <i class="fas fa-globe me-1"></i>
                               <a :href="project.url" target="_blank" class="text-link text-decoration-link">{{project.title}}</a>
-                            </strike></small>
+                            </small>
                             <small class="text-muted"><i class="fas fa-user me-1"></i>{{project.author}}</small>
                           </div>
                         </div>
